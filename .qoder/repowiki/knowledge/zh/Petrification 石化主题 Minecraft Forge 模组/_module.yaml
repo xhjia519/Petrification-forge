@@ -1,0 +1,20 @@
+schema_version: 1
+module_path: ""
+title: Petrification 石化主题 Minecraft Forge 模组
+scope:
+    - src/main/java/com/xiong/petrification/PetrificationMod.java
+    - src/main/java/com/xiong/petrification/ModConfigSpecHolder.java
+    - .gitignore
+    - LICENSE.txt
+    - build.gradle
+    - gradle.properties
+    - settings.gradle
+    - gradlew.bat
+    - .gitattributes
+    - Minecraft+26.2模组完整思路.md
+    - changelog.txt
+    - gradlew
+    - logo.png
+source_files: []
+depends_on: []
+related_to: []
