@@ -24,3 +24,8 @@ run
 # Files from Forge MDK
 forge_README.txt
 forge*changelog.txt
+
+# editor / toolchain
+.qoder
+.vscode
+run-data
