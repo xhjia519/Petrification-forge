@@ -1,0 +1,26 @@
+package com.xiong.petrification.registry;
+
+import com.xiong.petrification.PetrificationMod;
+import com.xiong.petrification.menu.PetrificationCoreMenu;
+import net.minecraft.world.inventory.MenuType;
+import net.minecraftforge.common.extensions.IForgeMenuType;
+import net.minecraftforge.eventbus.api.bus.BusGroup;
+import net.minecraftforge.network.IContainerFactory;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
+
+public final class ModMenus {
+    public static final DeferredRegister<MenuType<?>> MENUS =
+            DeferredRegister.create(ForgeRegistries.MENU_TYPES, PetrificationMod.MODID);
+
+    public static final RegistryObject<MenuType<PetrificationCoreMenu>> PETRIFICATION_CORE =
+            MENUS.register("petrification_core",
+                    () -> IForgeMenuType.create((IContainerFactory<PetrificationCoreMenu>) PetrificationCoreMenu::fromNetwork));
+
+    private ModMenus() {}
+
+    public static void register(BusGroup modBusGroup) {
+        MENUS.register(modBusGroup);
+    }
+}
