@@ -101,5 +101,16 @@
 
   "commands.petrification.failed": "Could not create that statue.",
   "commands.petrification.give.success": "Gave %s statue, %s in total",
-  "commands.petrification.setblock.success": "Placed %1$s statue at %2$s"
+  "commands.petrification.setblock.success": "Placed %1$s statue at %2$s",
+
+  "block.petrification.petrification_core": "Petrification Core",
+  "container.petrification.petrification_core": "Petrification Core",
+  "gui.petrification.core.fuel": "Fuel",
+  "gui.petrification.core.radius": "Radius: %s",
+  "gui.petrification.core.status_inactive": "Inactive: insert fuel",
+  "gui.petrification.core.status_awaiting": "Settings changed - insert fuel to pay",
+  "gui.petrification.core.status_active": "Active · %s · Radius %s · Whitelist %s",
+  "gui.petrification.core.whitelist_search": "Search entities...",
+  "gui.petrification.core.whitelist": "Whitelist (empty = all)",
+  "gui.petrification.core.affect_players": "Affect players"
 }

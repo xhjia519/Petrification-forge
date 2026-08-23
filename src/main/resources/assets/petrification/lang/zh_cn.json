@@ -101,5 +101,16 @@
 
   "commands.petrification.failed": "无法生成该雕像。",
   "commands.petrification.give.success": "已给予 %s 雕像，共 %s 个",
-  "commands.petrification.setblock.success": "已在 %2$s 放置 %1$s 雕像"
+  "commands.petrification.setblock.success": "已在 %2$s 放置 %1$s 雕像",
+
+  "block.petrification.petrification_core": "石化核心",
+  "container.petrification.petrification_core": "石化核心",
+  "gui.petrification.core.fuel": "燃料",
+  "gui.petrification.core.radius": "范围半径：%s",
+  "gui.petrification.core.status_inactive": "§7未激活：请放入燃料",
+  "gui.petrification.core.status_awaiting": "§e设置已修改，请放入燃料支付",
+  "gui.petrification.core.status_active": "§a已激活 · %s · 半径%s · 白名单%s种",
+  "gui.petrification.core.whitelist_search": "搜索实体…",
+  "gui.petrification.core.whitelist": "白名单（空=全部）",
+  "gui.petrification.core.affect_players": "石化玩家"
 }
