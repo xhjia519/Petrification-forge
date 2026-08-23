@@ -14,6 +14,9 @@ public final class ClientSetup {
         EntityRenderersEvent.RegisterRenderers.BUS.addListener(ClientSetup::registerRenderers);
         RegisterColorHandlersEvent.Block.BUS.addListener(ClientSetup::registerBlockColors);
         registerSpecialItemRenderer();
+        net.minecraft.client.gui.screens.MenuScreens.register(
+                com.xiong.petrification.registry.ModMenus.PETRIFICATION_CORE.get(),
+                PetrificationCoreScreen::new);
     }
 
     /**
@@ -48,6 +51,9 @@ public final class ClientSetup {
         event.registerBlockEntityRenderer(ModBlockEntities.STATUE_BLOCK_ENTITY.get(), StatueBlockEntityRenderer::new);
         // 微缩建筑方块渲染器：以微缩比例渲染压缩前的建筑原貌
         event.registerBlockEntityRenderer(ModBlockEntities.MINI_STRUCTURE_BLOCK_ENTITY.get(), MiniStructureRenderer::new);
+        // 石化核心光波渲染器
+        event.registerBlockEntityRenderer(ModBlockEntities.PETRIFICATION_CORE_BLOCK_ENTITY.get(),
+                PetrificationCoreBlockEntityRenderer::new);
         // Override the vanilla sulfur cube renderer so swallowed statues show the mob model
         net.minecraft.client.renderer.entity.EntityRenderers.register(
                 net.minecraft.world.entity.EntityTypes.SULFUR_CUBE, StatueSulfurCubeRenderer::new);
