@@ -5,6 +5,7 @@ import com.xiong.petrification.item.MiniStructureBlockItem;
 import com.xiong.petrification.item.RestorationPowderItem;
 import com.xiong.petrification.item.StatueBlockItem;
 import com.xiong.petrification.item.StructureCoreItem;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.registries.DeferredRegister;
@@ -56,6 +57,11 @@ public final class ModItems {
             () -> new MiniStructureBlockItem(new Item.Properties()
                     .setId(ITEMS.key("mini_structure_block"))
                     .stacksTo(1)));
+
+    // 石化核心方块物品
+    public static final RegistryObject<BlockItem> PETRIFICATION_CORE_BLOCK_ITEM = ITEMS.register("petrification_core",
+            () -> new BlockItem(ModBlocks.PETRIFICATION_CORE_BLOCK.get(), new Item.Properties()
+                    .setId(ITEMS.key("petrification_core"))));
 
     private ModItems() {}
 

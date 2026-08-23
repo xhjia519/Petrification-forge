@@ -2,6 +2,7 @@ package com.xiong.petrification.registry;
 
 import com.xiong.petrification.PetrificationMod;
 import com.xiong.petrification.block.MiniStructureBlock;
+import com.xiong.petrification.block.PetrificationCoreBlock;
 import com.xiong.petrification.block.StatueBlock;
 import com.xiong.petrification.block.StatueBlockEntity;
 import net.minecraft.core.registries.Registries;
@@ -36,6 +37,16 @@ public final class ModBlocks {
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.WOOD)
                     .noOcclusion()));
+
+    // 石化核心：燃料激活后持续石化范围内生物（GUI 配置范围/白名单）
+    public static final RegistryObject<PetrificationCoreBlock> PETRIFICATION_CORE_BLOCK = BLOCKS.register("petrification_core",
+            () -> new PetrificationCoreBlock(BlockBehaviour.Properties.of()
+                    .setId(BLOCKS.key("petrification_core"))
+                    .mapColor(MapColor.COLOR_GREEN)
+                    .strength(3.0f, 9.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.STONE)
+                    .lightLevel(_ -> 7)));
 
     private ModBlocks() {}
 

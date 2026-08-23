@@ -35,6 +35,8 @@ public final class ModCreativeTabs {
                         // 建筑压缩模块
                         output.accept(ModItems.STRUCTURE_CORE.get());
                         output.accept(ModItems.MINI_STRUCTURE_BLOCK_ITEM.get());
+                        // 石化核心
+                        output.accept(ModItems.PETRIFICATION_CORE_BLOCK_ITEM.get());
                         // Add all 6 potion types (normal, splash, lingering)
                         addPotionVariants(output, ModPotions.STONE);
                         addPotionVariants(output, ModPotions.IRON);
@@ -93,6 +95,8 @@ public final class ModCreativeTabs {
             event.accept(ModItems.STATUE_BLOCK_ITEM);
             // 微缩建筑方块也放入建筑方块标签页，方便玩家查看
             event.accept(ModItems.MINI_STRUCTURE_BLOCK_ITEM);
+            // 石化核心属于功能性方块
+            event.accept(ModItems.PETRIFICATION_CORE_BLOCK_ITEM);
         }
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             // 压缩核心属于工具类道具

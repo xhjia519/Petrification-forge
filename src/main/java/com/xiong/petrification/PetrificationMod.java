@@ -10,6 +10,7 @@ import com.xiong.petrification.registry.ModCreativeTabs;
 import com.xiong.petrification.registry.ModDataComponents;
 import com.xiong.petrification.registry.ModEffects;
 import com.xiong.petrification.registry.ModItems;
+import com.xiong.petrification.registry.ModMenus;
 import com.xiong.petrification.registry.ModPotions;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -32,6 +33,7 @@ public final class PetrificationMod {
         ModBlocks.register(modBusGroup);
         ModItems.register(modBusGroup);
         ModBlockEntities.register(modBusGroup);
+        ModMenus.register(modBusGroup);
         ModEffects.register(modBusGroup);
         ModPotions.register(modBusGroup);
         ModCreativeTabs.register(modBusGroup);
