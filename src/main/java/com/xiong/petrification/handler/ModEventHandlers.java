@@ -129,5 +129,8 @@ public final class ModEventHandlers {
             serverLevel.playSound(null, pos, net.minecraft.sounds.SoundEvents.STONE_BREAK,
                     net.minecraft.sounds.SoundSource.BLOCKS, 0.8f, 0.8f);
         });
+
+        // 已还原建筑：方块按正常方式挖掘（"破坏即整体重压缩"机制已移除，
+        // 旧配置文件中遗留的 structure.recompressOnBreak 键会被自动忽略）
     }
 }

@@ -25,6 +25,16 @@ public final class ModCreativeTabs {
                     .displayItems((_, output) -> {
                         output.accept(ModItems.STATUE_BLOCK_ITEM.get());
                         output.accept(ModItems.RESTORATION_POWDER.get());
+                        // 六种稀有材料粉末
+                        output.accept(ModItems.TURTLE_SCUTE_POWDER.get());
+                        output.accept(ModItems.PRISMARINE_SHARD_POWDER.get());
+                        output.accept(ModItems.SULFUR_POWDER.get());
+                        output.accept(ModItems.SHULKER_SHELL_POWDER.get());
+                        output.accept(ModItems.LAPIS_LAZULI_POWDER.get());
+                        output.accept(ModItems.AMETHYST_POWDER.get());
+                        // 建筑压缩模块
+                        output.accept(ModItems.STRUCTURE_CORE.get());
+                        output.accept(ModItems.MINI_STRUCTURE_BLOCK_ITEM.get());
                         // Add all 6 potion types (normal, splash, lingering)
                         addPotionVariants(output, ModPotions.STONE);
                         addPotionVariants(output, ModPotions.IRON);
@@ -81,9 +91,22 @@ public final class ModCreativeTabs {
     public static void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModItems.STATUE_BLOCK_ITEM);
+            // 微缩建筑方块也放入建筑方块标签页，方便玩家查看
+            event.accept(ModItems.MINI_STRUCTURE_BLOCK_ITEM);
+        }
+        if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            // 压缩核心属于工具类道具
+            event.accept(ModItems.STRUCTURE_CORE);
         }
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.RESTORATION_POWDER);
+            // 将稀有材料粉末也放入原料标签页，方便玩家查看
+            event.accept(ModItems.TURTLE_SCUTE_POWDER);
+            event.accept(ModItems.PRISMARINE_SHARD_POWDER);
+            event.accept(ModItems.SULFUR_POWDER);
+            event.accept(ModItems.SHULKER_SHELL_POWDER);
+            event.accept(ModItems.LAPIS_LAZULI_POWDER);
+            event.accept(ModItems.AMETHYST_POWDER);
         }
     }
 }

@@ -35,3 +35,6 @@ Minecraft+26.2模组完整思路.md
 restoration.png
 logo.png
 changelog.txt
+
+# local AI workspace memory (not part of the mod source)
+.workbuddy/

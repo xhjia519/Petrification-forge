@@ -2,6 +2,15 @@
   "block.petrification.statue_block": "Statue Block",
   "item.petrification.statue_block": "Statue",
   "item.petrification.restoration_powder": "Restoration Powder",
+  "item.petrification.structure_core": "Structure Core",
+  "item.petrification.mini_structure_block": "Miniature Structure Block",
+  "item.petrification.mini_structure_block.named": "Miniature: %s",
+  "item.petrification.turtle_scute_powder": "Turtle Scute Powder",
+  "item.petrification.prismarine_shard_powder": "Prismarine Shard Powder",
+  "item.petrification.sulfur_powder": "Sulfur Powder",
+  "item.petrification.shulker_shell_powder": "Shulker Shell Powder",
+  "item.petrification.lapis_lazuli_powder": "Lapis Lazuli Powder",
+  "item.petrification.amethyst_powder": "Amethyst Powder",
   "itemGroup.petrification": "Petrification",
 
   "effect.petrification.stone_materialization": "Petrification",
@@ -51,6 +60,8 @@
   "material.petrification.diamond": "Diamond",
   "material.petrification.netherite": "Netherite",
 
+  "structure.petrification.player_build": "Player Build",
+
   "tooltip.petrification.material": "Material: %s",
   "tooltip.petrification.oxidation": "Oxidation: %s",
   "tooltip.petrification.entity": "Original: %s",
@@ -61,6 +72,13 @@
   "tooltip.petrification.target_biological": "Biological",
   "tooltip.petrification.target_player": "Player",
 
+  "tooltip.petrification.structure_core_usage": "§7Right-click a building: identify bounds; right-click again: compress into block",
+  "tooltip.petrification.mini_structure_name": "§b%s",
+  "tooltip.petrification.mini_structure_size": "§7Size: %s×%s×%s",
+  "tooltip.petrification.mini_structure_blocks": "§7Blocks: %s",
+  "tooltip.petrification.mini_structure_usage": "§7Place in world; right-click the block to restore the building",
+  "tooltip.petrification.mini_structure_time": "§7Compressed: %s",
+
   "statue.petrification.unnamed": "Materialized Statue",
   "statue.petrification.name": "%s %s",
 
@@ -70,6 +88,14 @@
   "message.petrification.materialized": "§c%s has been petrified!",
   "message.petrification.waxed": "§6Statue has been waxed. Oxidation locked.",
   "message.petrification.already_waxed": "§7This statue is already waxed.",
+
+  "message.petrification.structure_identified": "§aIdentified structure: %s §7(%s)",
+  "message.petrification.structure_confirm": "§7Right-click again within %ss to compress.",
+  "message.petrification.structure_not_found": "§cNo recognizable structure found.",
+  "message.petrification.structure_too_small": "§cStructure too small (%s < %s).",
+  "message.petrification.structure_compressed": "§aStructure compressed into miniature block.",
+  "message.petrification.structure_cancelled": "§7Structure compression cancelled.",
+  "message.petrification.structure_restoring": "§aRestoring structure: %s.",
 
   "disconnect.petrification.materialized": "You have been petrified!",
 

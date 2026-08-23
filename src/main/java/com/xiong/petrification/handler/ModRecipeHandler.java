@@ -6,6 +6,7 @@ import com.xiong.petrification.component.StatueComponent;
 import com.xiong.petrification.registry.ModDataComponents;
 import com.xiong.petrification.registry.ModItems;
 import com.xiong.petrification.registry.ModPotions;
+import net.minecraft.core.NonNullList;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.StreamCodec;
@@ -31,6 +32,9 @@ public final class ModRecipeHandler {
 
     public static final RegistryObject<RecipeSerializer<StatueComposeRecipe>> COMPOSE =
             RECIPE_SERIALIZERS.register("statue_compose", () -> StatueComposeRecipe.SERIALIZER);
+
+    public static final RegistryObject<RecipeSerializer<RestorationPowderRecipe>> RESTORATION_POWDER =
+            RECIPE_SERIALIZERS.register("restoration_powder", () -> RestorationPowderRecipe.SERIALIZER);
 
     public static void register(net.minecraftforge.eventbus.api.bus.BusGroup modBusGroup) {
         RECIPE_SERIALIZERS.register(modBusGroup);
@@ -156,6 +160,75 @@ public final class ModRecipeHandler {
                 }
             }
             return null;
+        }
+
+        public boolean canCraftInDimensions(int width, int height) {
+            return width >= 3 && height >= 3;
+        }
+
+        @Override
+        public RecipeSerializer<? extends CustomRecipe> getSerializer() {
+            return SERIALIZER;
+        }
+    }
+
+    /**
+     * 还原粉配方：六种粉末 + 红石 + 火药 + 下界之星无序合成，产出 8 个还原粉。
+     * 下界之星作为催化剂，合成后不消耗（本版本的 Ingredient JSON 不支持 remainders 字段，
+     * 因此仿照上面两个雕像配方，用自定义配方重写 getRemainingItems 来保留下界之星）。
+     */
+    public static class RestorationPowderRecipe extends CustomRecipe {
+        public static final RestorationPowderRecipe INSTANCE = new RestorationPowderRecipe();
+        public static final MapCodec<RestorationPowderRecipe> MAP_CODEC = MapCodec.unit(INSTANCE);
+        public static final StreamCodec<RegistryFriendlyByteBuf, RestorationPowderRecipe> STREAM_CODEC = StreamCodec.unit(INSTANCE);
+        public static final RecipeSerializer<RestorationPowderRecipe> SERIALIZER = new RecipeSerializer<>(MAP_CODEC, STREAM_CODEC);
+
+        // 无序合成：九种材料各一个，位置不限
+        @Override
+        public boolean matches(CraftingInput input, Level level) {
+            if (input.ingredientCount() != 9) {
+                return false;
+            }
+            // 统计合成栏中每种所需材料的数量，全部恰好为 1 才算匹配
+            int turtleScute = 0, sulfur = 0, prismarine = 0, lapis = 0, shulker = 0, amethyst = 0;
+            int netherStar = 0, redstone = 0, gunpowder = 0;
+            for (int i = 0; i < input.size(); i++) {
+                ItemStack stack = input.getItem(i);
+                if (stack.isEmpty()) {
+                    continue;
+                }
+                if (stack.is(ModItems.TURTLE_SCUTE_POWDER.get())) turtleScute++;
+                else if (stack.is(ModItems.SULFUR_POWDER.get())) sulfur++;
+                else if (stack.is(ModItems.PRISMARINE_SHARD_POWDER.get())) prismarine++;
+                else if (stack.is(ModItems.LAPIS_LAZULI_POWDER.get())) lapis++;
+                else if (stack.is(ModItems.SHULKER_SHELL_POWDER.get())) shulker++;
+                else if (stack.is(ModItems.AMETHYST_POWDER.get())) amethyst++;
+                else if (stack.is(Items.NETHER_STAR)) netherStar++;
+                else if (stack.is(Items.REDSTONE)) redstone++;
+                else if (stack.is(Items.GUNPOWDER)) gunpowder++;
+                else return false; // 出现任何无关材料，直接不匹配
+            }
+            return turtleScute == 1 && sulfur == 1 && prismarine == 1 && lapis == 1
+                    && shulker == 1 && amethyst == 1 && netherStar == 1
+                    && redstone == 1 && gunpowder == 1;
+        }
+
+        @Override
+        public ItemStack assemble(CraftingInput input) {
+            return new ItemStack(ModItems.RESTORATION_POWDER.get(), 8);
+        }
+
+        // 下界之星作为催化剂保留在合成栏中，其余材料正常消耗
+        @Override
+        public NonNullList<ItemStack> getRemainingItems(CraftingInput input) {
+            NonNullList<ItemStack> result = NonNullList.withSize(input.size(), ItemStack.EMPTY);
+            for (int slot = 0; slot < input.size(); slot++) {
+                ItemStack stack = input.getItem(slot);
+                if (stack.is(Items.NETHER_STAR)) {
+                    result.set(slot, stack.copy());
+                }
+            }
+            return result;
         }
 
         public boolean canCraftInDimensions(int width, int height) {

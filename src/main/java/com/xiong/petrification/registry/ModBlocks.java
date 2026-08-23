@@ -1,6 +1,7 @@
 package com.xiong.petrification.registry;
 
 import com.xiong.petrification.PetrificationMod;
+import com.xiong.petrification.block.MiniStructureBlock;
 import com.xiong.petrification.block.StatueBlock;
 import com.xiong.petrification.block.StatueBlockEntity;
 import net.minecraft.core.registries.Registries;
@@ -24,6 +25,16 @@ public final class ModBlocks {
                     .strength(2.0f, 6.0f)
                     .requiresCorrectToolForDrops()
                     .sound(SoundType.STONE)
+                    .noOcclusion()));
+
+    // 微缩建筑方块：放置后渲染建筑微缩模型，右键整栋还原
+    public static final RegistryObject<MiniStructureBlock> MINI_STRUCTURE_BLOCK = BLOCKS.register("mini_structure_block",
+            () -> new MiniStructureBlock(BlockBehaviour.Properties.of()
+                    .setId(BLOCKS.key("mini_structure_block"))
+                    .mapColor(MapColor.WOOD)
+                    .strength(1.5f, 6.0f)
+                    .requiresCorrectToolForDrops()
+                    .sound(SoundType.WOOD)
                     .noOcclusion()));
 
     private ModBlocks() {}

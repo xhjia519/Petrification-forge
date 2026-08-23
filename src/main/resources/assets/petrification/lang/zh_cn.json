@@ -2,6 +2,15 @@
   "block.petrification.statue_block": "雕像方块",
   "item.petrification.statue_block": "雕像",
   "item.petrification.restoration_powder": "还原粉",
+  "item.petrification.structure_core": "结构核心",
+  "item.petrification.mini_structure_block": "微缩建筑方块",
+  "item.petrification.mini_structure_block.named": "微缩建筑：%s",
+  "item.petrification.turtle_scute_powder": "海龟鳞片粉末",
+  "item.petrification.prismarine_shard_powder": "海晶碎片粉末",
+  "item.petrification.sulfur_powder": "硫磺粉末",
+  "item.petrification.shulker_shell_powder": "潜影壳粉末",
+  "item.petrification.lapis_lazuli_powder": "青金石粉末",
+  "item.petrification.amethyst_powder": "紫水晶粉末",
   "itemGroup.petrification": "石化",
 
   "effect.petrification.stone_materialization": "石化",
@@ -51,6 +60,8 @@
   "material.petrification.diamond": "钻石",
   "material.petrification.netherite": "下界合金",
 
+  "structure.petrification.player_build": "玩家建筑",
+
   "tooltip.petrification.material": "材质：%s",
   "tooltip.petrification.oxidation": "氧化进度：%s",
   "tooltip.petrification.entity": "原始实体：%s",
@@ -61,6 +72,13 @@
   "tooltip.petrification.target_biological": "生物",
   "tooltip.petrification.target_player": "玩家",
 
+  "tooltip.petrification.structure_core_usage": "§7右键建筑：识别边界；再次右键：压缩为微缩方块",
+  "tooltip.petrification.mini_structure_name": "§b%s",
+  "tooltip.petrification.mini_structure_size": "§7尺寸：%s×%s×%s",
+  "tooltip.petrification.mini_structure_blocks": "§7方块数：%s",
+  "tooltip.petrification.mini_structure_usage": "§7右键放置在世界中；对方块再次右键可还原建筑",
+  "tooltip.petrification.mini_structure_time": "§7压缩时间：%s",
+
   "statue.petrification.unnamed": "材质化雕像",
   "statue.petrification.name": "%s%s",
 
@@ -70,6 +88,14 @@
   "message.petrification.materialized": "§c%s 已被石化！",
   "message.petrification.waxed": "§6雕像已打蜡。氧化进度已锁定。",
   "message.petrification.already_waxed": "§7这个雕像已经打过蜡了。",
+
+  "message.petrification.structure_identified": "§a已识别建筑：%s §7(%s)",
+  "message.petrification.structure_confirm": "§7请在 %s 秒内再次右键确认压缩",
+  "message.petrification.structure_not_found": "§c未找到可识别的建筑。",
+  "message.petrification.structure_too_small": "§c建筑方块数不足（%s < %s）。",
+  "message.petrification.structure_compressed": "§a建筑已压缩为微缩方块。",
+  "message.petrification.structure_cancelled": "§7建筑压缩已取消。",
+  "message.petrification.structure_restoring": "§a正在还原建筑：%s。",
 
   "disconnect.petrification.materialized": "你已被石化！",
 

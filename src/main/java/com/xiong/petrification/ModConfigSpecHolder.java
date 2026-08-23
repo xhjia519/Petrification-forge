@@ -41,6 +41,28 @@ public final class ModConfigSpecHolder {
             .comment("Statue render distance in blocks")
             .defineInRange("performance.statueRenderDistance", 64, 16, 256);
 
+    // ===== 建筑压缩模块配置 =====
+
+    private static final ForgeConfigSpec.IntValue STRUCTURE_MAX_SCAN_SIZE = BUILDER
+            .comment("Maximum scan radius when detecting a building")
+            .defineInRange("structure.maxScanSize", 64, 8, 128);
+
+    private static final ForgeConfigSpec.IntValue STRUCTURE_MIN_BLOCKS = BUILDER
+            .comment("Minimum block count required to compress a building")
+            .defineInRange("structure.minBlocks", 20, 1, 10000);
+
+    private static final ForgeConfigSpec.IntValue STRUCTURE_CONFIRMATION_TIMEOUT = BUILDER
+            .comment("Confirmation timeout in seconds after structure identification")
+            .defineInRange("structure.confirmationTimeout", 5, 1, 60);
+
+    private static final ForgeConfigSpec.IntValue STRUCTURE_RESTORE_BATCH_SIZE = BUILDER
+            .comment("Blocks restored per tick during structure restoration")
+            .defineInRange("structure.restoreBatchSize", 100, 1, 5000);
+
+    private static final ForgeConfigSpec.IntValue STRUCTURE_MAX_TRACKED = BUILDER
+            .comment("Maximum number of restored structures tracked")
+            .defineInRange("structure.maxTracked", 50, 1, 500);
+
     static final ForgeConfigSpec SPEC = BUILDER.build();
 
     public static double potionRangeMultiplier = 1.0;
@@ -51,6 +73,11 @@ public final class ModConfigSpecHolder {
     public static double maxOxidation = 1.0;
     public static boolean enableOxidation = true;
     public static int statueRenderDistance = 64;
+    public static int structureMaxScanSize = 64;
+    public static int structureMinBlocks = 20;
+    public static int structureConfirmationTimeout = 5;
+    public static int structureRestoreBatchSize = 100;
+    public static int structureMaxTracked = 50;
 
     private ModConfigSpecHolder() {}
 
@@ -64,5 +91,10 @@ public final class ModConfigSpecHolder {
         maxOxidation = MAX_OXIDATION.get();
         enableOxidation = ENABLE_OXIDATION.get();
         statueRenderDistance = STATUE_RENDER_DISTANCE.get();
+        structureMaxScanSize = STRUCTURE_MAX_SCAN_SIZE.get();
+        structureMinBlocks = STRUCTURE_MIN_BLOCKS.get();
+        structureConfirmationTimeout = STRUCTURE_CONFIRMATION_TIMEOUT.get();
+        structureRestoreBatchSize = STRUCTURE_RESTORE_BATCH_SIZE.get();
+        structureMaxTracked = STRUCTURE_MAX_TRACKED.get();
     }
 }

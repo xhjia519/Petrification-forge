@@ -46,6 +46,8 @@ public final class ClientSetup {
 
     private static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(ModBlockEntities.STATUE_BLOCK_ENTITY.get(), StatueBlockEntityRenderer::new);
+        // 微缩建筑方块渲染器：以微缩比例渲染压缩前的建筑原貌
+        event.registerBlockEntityRenderer(ModBlockEntities.MINI_STRUCTURE_BLOCK_ENTITY.get(), MiniStructureRenderer::new);
         // Override the vanilla sulfur cube renderer so swallowed statues show the mob model
         net.minecraft.client.renderer.entity.EntityRenderers.register(
                 net.minecraft.world.entity.EntityTypes.SULFUR_CUBE, StatueSulfurCubeRenderer::new);
