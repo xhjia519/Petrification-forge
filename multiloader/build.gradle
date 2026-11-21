@@ -1,0 +1,37 @@
+plugins {
+    // Architectury Loom：MC 26.x 起官方分发包已不再混淆，因此使用 no-remap 变体
+    id 'dev.architectury.loom-no-remap' version '1.17.493' apply false
+}
+
+allprojects {
+    group = 'com.xiong.petrification'
+    version = '2.1.0'
+
+    repositories {
+        maven { name = 'Architectury'; url = 'https://maven.architectury.dev/' }
+        maven { name = 'Fabric'; url = 'https://maven.fabricmc.net/' }
+        maven { name = 'Forge'; url = 'https://maven.minecraftforge.net/' }
+        // NeoForged 官方 Maven 的 ForgeCDN 接入点（maven.neoforged.net 在部分网络不可达）
+        maven { name = 'NeoForged'; url = 'https://neoforged.forgecdn.net/releases' }
+        maven { name = 'Bmclapi'; url = 'https://bmclapi.bangbang93.com/maven' }
+        maven { name = 'Mojang'; url = 'https://libraries.minecraft.net/' }
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    // Loom 在插件 apply 时读取该属性决定创建哪套依赖配置，必须先于子项目脚本执行
+    if (name == 'forge' || name == 'neoforge') {
+        ext.set('loom.platform', name)
+    }
+
+    java {
+        toolchain.languageVersion = JavaLanguageVersion.of(25)
+    }
+
+    tasks.withType(JavaCompile).configureEach {
+        options.encoding = 'UTF-8'
+    }
+}

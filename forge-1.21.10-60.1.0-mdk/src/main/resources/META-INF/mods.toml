@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[60,)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="petrification"
+version="2.1.0"
+displayName="Petrification"
+logoFile="logo.png"
+authors="Xiong&Qianwen"
+description='''Petrification mod for Minecraft 1.21.10.
+Transform mobs, blocks, and players into materialized statues using potions.
+Supports stone, iron, copper, gold, diamond, and netherite materialization.'''
+
+[[dependencies.petrification]]
+    modId="forge"
+    mandatory=true
+    versionRange="[60,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.petrification]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.21.10,1.22,)"
+    ordering="NONE"
+    side="BOTH"

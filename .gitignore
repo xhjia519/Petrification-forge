@@ -38,3 +38,13 @@ changelog.txt
 
 # local AI workspace memory (not part of the mod source)
 .workbuddy/
+
+# === 多版本归档工作区（石化模组降级）===
+# 反编译临时产物
+.tmp_decomp/
+# 构建/排查日志
+*.log
+_neoforge_build*.log
+# 系统/编辑器
+.DS_Store
+Thumbs.db

@@ -1,0 +1,9 @@
+{
+  "model": {
+    "type": "minecraft:special",
+    "base": "petrification:block/statue_block",
+    "model": {
+      "type": "petrification:statue"
+    }
+  }
+}

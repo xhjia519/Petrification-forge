@@ -1,0 +1,740 @@
+[10:21:20] [modloading-worker-0/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key structure.maxTracked does not match the spec. This may create a backup.
+[10:21:20] [modloading-worker-0/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Built TOML config for E:\01_锟斤拷目\workplace\石锟斤拷模锟介降锟斤拷\forge-1.21.4-54.1.14-mdk\run\config\forge-common.toml
+[10:21:20] [modloading-worker-0/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Loaded TOML config file E:\01_锟斤拷目\workplace\石锟斤拷模锟介降锟斤拷\forge-1.21.4-54.1.14-mdk\run\config\forge-common.toml
+[10:21:20] [modloading-worker-0/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Watching TOML config file E:\01_锟斤拷目\workplace\石锟斤拷模锟介降锟斤拷\forge-1.21.4-54.1.14-mdk\run\config\forge-common.toml for changes
+[10:21:20] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file E:\01_锟斤拷目\workplace\石锟斤拷模锟介降锟斤拷\forge-1.21.4-54.1.14-mdk\run\config\forge-common.toml is not correct. Correcting
+[10:21:20] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key general was corrected from null to its default, SynchronizedConfig{DataHolder:{}}.
+[10:21:20] [modloading-worker-0/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key general.logLegacyTagWarnings was corrected from null to its default, OFF.
+[10:21:20] [modloading-worker-0/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key general.logLegacyTagWarnings does not match the spec. This may create a backup.
+[10:21:20] [modloading-worker-0/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key general does not match the spec. This may create a backup.
+[10:21:20] [modloading-worker-0/DEBUG] [ne.mi.co.ForgeConfig/FORGEMOD]: Loaded forge config file forge-common.toml     
+[10:21:20] [Worker-Main-5/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-16.0.01.hex, loading
+[10:21:20] [Worker-Main-7/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-16.0.01.hex, loading
+[10:21:20] [pool-9-thread-1/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Config file petrification-common.toml changed, sending notifies
+[10:21:20] [pool-9-thread-1/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Config file forge-common.toml changed, sending notifies
+[10:21:20] [pool-9-thread-1/DEBUG] [ne.mi.co.ForgeConfig/FORGEMOD]: Forge config just got changed on the file system!  
+[10:21:21] [Worker-Main-4/INFO] [co.xi.pe.PetrificationMod/]: Petrification mod initialized
+[10:21:21] [Render thread/DEBUG] [ne.mi.fm.DeferredWorkQueue/LOADING]: Dispatching synchronous work for work queue COMMON_SETUP: 1 jobs
+[10:21:21] [Render thread/DEBUG] [ne.mi.fm.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 14.83 ms    
+[10:21:21] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Starting version check at https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json
+[10:21:21] [Render thread/DEBUG] [ne.mi.fm.DeferredWorkQueue/LOADING]: Dispatching synchronous work for work queue SIDED_SETUP: 1 jobs
+[10:21:21] [Render thread/DEBUG] [ne.mi.fm.DeferredWorkQueue/LOADING]: Synchronous work queue completed in 38.50 ms
+[10:21:22] [Forge Version Check/DEBUG] [ne.mi.fm.VersionChecker/]: [forge] Received version check data:
+{
+  "homepage": "https://files.minecraftforge.net/net/minecraftforge/forge/",
+  "promos": {
+    "1.1-latest": "1.3.4.29",
+    "1.2.3-latest": "1.4.1.64",
+    "1.2.4-latest": "2.0.0.68",
+    "1.2.5-latest": "3.4.9.171",
+    "1.3.2-latest": "4.3.5.318",
+    "1.4.0-latest": "5.0.0.326",
+    "1.4.1-latest": "6.0.0.329",
+    "1.4.2-latest": "6.0.1.355",
+    "1.4.3-latest": "6.2.1.358",
+    "1.4.4-latest": "6.3.0.378",
+    "1.4.5-latest": "6.4.2.448",
+    "1.4.6-latest": "6.5.0.489",
+    "1.4.7-latest": "6.6.2.534",
+    "1.5-latest": "7.7.0.598",
+    "1.5.1-latest": "7.7.2.682",
+    "1.5.2-latest": "7.8.1.738",
+    "1.5.2-recommended": "7.8.1.738",
+    "1.6.1-latest": "8.9.0.775",
+    "1.6.2-latest": "9.10.1.871",
+    "1.6.2-recommended": "9.10.1.871",
+    "1.6.3-latest": "9.11.0.878",
+    "1.6.4-latest": "9.11.1.1345",
+    "1.6.4-recommended": "9.11.1.1345",
+    "1.7.2-latest": "10.12.2.1161",
+    "1.7.2-recommended": "10.12.2.1161",
+    "1.7.10-latest": "10.13.4.1614",
+    "1.7.10-recommended": "10.13.4.1614",
+    "1.8-latest": "11.14.4.1577",
+    "1.8-recommended": "11.14.4.1563",
+    "1.8.8-latest": "11.15.0.1655",
+    "1.8.9-latest": "11.15.1.2318",
+    "1.8.9-recommended": "11.15.1.2318",
+    "1.9-latest": "12.16.1.1938",
+    "1.9-recommended": "12.16.1.1887",
+    "1.9.4-latest": "12.17.0.2317",
+    "1.9.4-recommended": "12.17.0.2317",
+    "1.10-latest": "12.18.0.2000",
+    "1.10.2-latest": "12.18.3.2511",
+    "1.10.2-recommended": "12.18.3.2511",
+    "1.11-latest": "13.19.1.2199",
+    "1.11-recommended": "13.19.1.2189",
+    "1.11.2-latest": "13.20.1.2588",
+    "1.11.2-recommended": "13.20.1.2588",
+    "1.12-latest": "14.21.1.2443",
+    "1.12-recommended": "14.21.1.2387",
+    "1.12.1-latest": "14.22.1.2485",
+    "1.12.1-recommended": "14.22.1.2478",
+    "1.12.2-latest": "14.23.5.2864",
+    "1.12.2-recommended": "14.23.5.2859",
+    "1.13.2-latest": "25.0.223",
+    "1.14.2-latest": "26.0.63",
+    "1.14.3-latest": "27.0.60",
+    "1.14.4-latest": "28.2.30",
+    "1.14.4-recommended": "28.2.26",
+    "1.15-latest": "29.0.4",
+    "1.15.1-latest": "30.0.51",
+    "1.15.2-latest": "31.2.62",
+    "1.15.2-recommended": "31.2.57",
+    "1.16.1-latest": "32.0.108",
+    "1.16.2-latest": "33.0.61",
+    "1.16.3-latest": "34.1.42",
+    "1.16.3-recommended": "34.1.0",
+    "1.16.4-latest": "35.1.37",
+    "1.16.4-recommended": "35.1.4",
+    "1.16.5-latest": "36.2.42",
+    "1.16.5-recommended": "36.2.34",
+    "1.17.1-latest": "37.1.1",
+    "1.17.1-recommended": "37.1.1",
+    "1.18-latest": "38.0.17",
+    "1.18.1-latest": "39.1.2",
+    "1.18.1-recommended": "39.1.0",
+    "1.18.2-recommended": "40.3.0",
+    "1.18.2-latest": "40.3.12",
+    "1.19-latest": "41.1.0",
+    "1.19-recommended": "41.1.0",
+    "1.19.1-latest": "42.0.9",
+    "1.19.2-recommended": "43.5.0",
+    "1.19.2-latest": "43.5.2",
+    "1.19.3-latest": "44.1.23",
+    "1.19.3-recommended": "44.1.0",
+    "1.19.4-recommended": "45.4.0",
+    "1.19.4-latest": "45.4.5",
+    "1.20-latest": "46.0.14",
+    "1.20.1-recommended": "47.4.28",
+    "1.20.1-latest": "47.4.29",
+    "1.20.2-latest": "48.1.0",
+    "1.20.2-recommended": "48.1.0",
+    "1.20.3-latest": "49.0.2",
+    "1.20.4-latest": "49.2.13",
+    "1.20.4-recommended": "49.2.13",
+    "1.20.6-latest": "50.2.15",
+    "1.20.6-recommended": "50.2.14",
+    "1.21-latest": "51.0.33",
+    "1.21.1-latest": "52.1.21",
+    "1.21.1-recommended": "52.1.20",
+    "1.21.3-latest": "53.1.16",
+    "1.21.3-recommended": "53.1.16",
+    "1.21.4-latest": "54.1.22",
+    "1.21.4-recommended": "54.1.22",
+    "1.21.5-latest": "55.1.18",
+    "1.21.5-recommended": "55.1.18",
+    "1.21.6-latest": "56.0.9",
+    "1.21.7-latest": "57.0.3",
+    "1.21.8-latest": "58.1.26",
+    "1.21.8-recommended": "58.1.26",
+    "1.21.9-latest": "59.0.5",
+    "1.21.10-latest": "60.1.18",
+    "1.21.10-recommended": "60.1.18",
+    "1.21.11-latest": "61.2.5",
+    "1.21.11-recommended": "61.2.4",
+    "26.1-latest": "62.0.9",
+    "26.1.1-latest": "63.0.2",
+    "26.1.2-latest": "64.1.6",
+    "26.1.2-recommended": "64.1.5",
+    "26.2-latest": "65.1.6",
+    "26.2-recommended": "65.1.5",
+    "26.3-latest": "66.1.9",
+    "26.3-recommended": "66.1.9"
+  }
+}
+[10:21:22] [Forge Version Check/INFO] [ne.mi.fm.VersionChecker/]: [forge] Found status: OUTDATED Current: 54.1.14 Target: 54.1.22
+[10:21:23] [Render thread/DEBUG] [ne.mi.co.ForgeI18n/CORE]: Loading I18N data entries: 7059
+[10:21:24] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on 锟斤拷锟斤拷锟斤拷 (HK Aura Studio 4)
+[10:21:24] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atla 
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas  
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas   
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[10:21:24] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas   
+[10:21:32] [Render thread/DEBUG] [ne.mi.re.ResourcePackLoader/CORE]: Generating PackInfo named mod:forge for mod file  
+[10:21:32] [Render thread/DEBUG] [ne.mi.re.ResourcePackLoader/CORE]: Generating PackInfo named mod:petrification for mod file E:\01_锟斤拷目\workplace\石锟斤拷模锟介降锟斤拷\forge-1.21.4-54.1.14-mdk\build\sourcesSets\main
+[10:21:32] [Render thread/INFO] [minecraft/ReloadableResourceManager]: Reloading ResourceManager: vanilla, mod_resources
+[10:21:32] [Worker-Main-11/INFO] [minecraft/UnihexProvider]: Found unifont_all_no_pua-16.0.01.hex, loading
+[10:21:32] [Worker-Main-11/INFO] [minecraft/UnihexProvider]: Found unifont_jp_patch-16.0.01.hex, loading
+[10:21:33] [Render thread/DEBUG] [ne.mi.co.ForgeI18n/CORE]: Loading I18N data entries: 8864
+[10:21:33] [Render thread/INFO] [mojang/Library]: OpenAL initialized on device OpenAL Soft on 锟斤拷锟斤拷锟斤拷 (HK Aura Studio 4)
+[10:21:33] [Render thread/INFO] [minecraft/SoundEngine]: Sound engine started
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas  
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 2048x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas   
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[10:21:33] [Render thread/INFO] [minecraft/TextureAtlas]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas   
+[10:21:38] [Render thread/DEBUG] [ne.mi.re.ResourcePackLoader/CORE]: Generating PackInfo named mod:forge for mod file  
+[10:21:38] [Render thread/DEBUG] [ne.mi.re.ResourcePackLoader/CORE]: Generating PackInfo named mod:petrification for mod file E:\01_锟斤拷目\workplace\石锟斤拷模锟介降锟斤拷\forge-1.21.4-54.1.14-mdk\build\sourcesSets\main
+[10:21:39] [Worker-Main-4/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/server/commands/SummonCommand
+[10:21:39] [Worker-Main-4/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/server/commands/SummonCommand.createEntity
+[10:21:39] [Worker-Main-4/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/server/commands/RaidCommand
+[10:21:39] [Worker-Main-4/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/server/commands/RaidCommand.spawnLeader
+[10:21:40] [Render thread/INFO] [minecraft/RecipeManager]: Loaded 1380 recipes
+[10:21:40] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 1481 advancements
+[10:21:52] [Render thread/DEBUG] [ne.mi.re.ResourcePackLoader/CORE]: Generating PackInfo named mod:forge for mod file  
+[10:21:52] [Render thread/DEBUG] [ne.mi.re.ResourcePackLoader/CORE]: Generating PackInfo named mod:petrification for mod file E:\01_锟斤拷目\workplace\石锟斤拷模锟介降锟斤拷\forge-1.21.4-54.1.14-mdk\build\sourcesSets\main
+[10:21:52] [Render thread/DEBUG] [ne.mi.co.ForgeHooks/WP]: Gathering id map for writing to world save 锟铰碉拷锟斤拷锟 斤拷
+[10:21:52] [Render thread/DEBUG] [ne.mi.co.ForgeHooks/WP]: ID Map collection complete 锟铰碉拷锟斤拷锟斤拷
+[10:21:52] [Server thread/INFO] [minecraft/IntegratedServer]: Starting integrated minecraft server version 1.21.4
+[10:21:52] [Server thread/INFO] [minecraft/MinecraftServer]: Generating keypair
+[10:21:52] [Server thread/DEBUG] [ne.mi.fm.co.ConfigTracker/CONFIG]: Loading configs type SERVER
+[10:21:52] [Server thread/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Built TOML config for .\saves\锟铰碉拷锟斤拷锟斤拷\serverconfig\forge-server.toml
+[10:21:52] [Server thread/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Loaded TOML config file .\saves\锟铰碉拷锟斤拷锟斤拷\serverconfig\forge-server.toml
+[10:21:52] [Server thread/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Starting watcher for handler: ConfigFileTypeHandler[SERVER]
+[10:21:52] [Server thread/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Watching TOML config file .\saves\锟铰碉拷锟斤拷锟斤拷\serverconfig\forge-server.toml for changes
+[10:21:52] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Configuration file .\saves\锟铰碉拷锟斤拷锟斤拷\serverconfig\forge-server.toml is not correct. Correcting
+[10:21:52] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server was corrected from null to its default, SynchronizedConfig{DataHolder:{}}.
+[10:21:52] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringBlockEntities was corrected from null to its default, false.
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key server.removeErroringBlockEntities does not match the spec. This may create a backup.
+[10:21:52] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.removeErroringEntities was corrected from null to its default, false.
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key server.removeErroringEntities does not match the spec. This may create a backup.
+[10:21:52] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.fullBoundingBoxLadders was corrected from null to its default, false.
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key server.fullBoundingBoxLadders does not match the spec. This may create a backup.
+[10:21:52] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.permissionHandler was corrected from null to its default, forge:default_handler.
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key server.permissionHandler does not match the spec. This may create a backup.
+[10:21:52] [Server thread/WARN] [ne.mi.co.ForgeConfigSpec/CORE]: Incorrect key server.advertiseDedicatedServerToLan was corrected from null to its default, true.
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key server.advertiseDedicatedServerToLan does not match the spec. This may create a backup.
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.ForgeConfigSpec/CORE]: The comment on key server does not match the spec. This may create a backup.
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.ForgeConfig/FORGEMOD]: Loaded forge config file forge-server.toml
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/PhantomSpawner
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/levelgen/PhantomSpawner.tick
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/PatrolSpawner
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/levelgen/PatrolSpawner.spawnPatrolMember
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/npc/CatSpawner
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/npc/CatSpawner.spawnCat
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/ai/village/VillageSiege
+[10:21:52] [Server thread/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/ai/village/VillageSiege.trySpawn
+[10:21:52] [pool-10-thread-1/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Config file forge-server.toml changed, sending notifies
+[10:21:52] [pool-10-thread-1/DEBUG] [ne.mi.co.ForgeConfig/FORGEMOD]: Forge config just got changed on the file system!
+[10:21:52] [Server thread/INFO] [minecraft/MinecraftServer]: Preparing start region for dimension minecraft:overworld  
+[10:21:53] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: 准锟斤拷锟斤拷锟斤拷锟斤拷锟斤拷锟叫ｏ拷2%    
+[10:21:53] [Server thread/INFO] [ne.mi.se.pe.PermissionAPI/]: Successfully initialized permission handler forge:default_handler
+[10:21:53] [Render thread/INFO] [minecraft/LoggerChunkProgressListener]: Time elapsed: 292 ms
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.AbstractByteBuf/]: -Dio.netty.buffer.checkAccessible: true
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.AbstractByteBuf/]: -Dio.netty.buffer.checkBounds: true
+[10:21:53] [Server thread/DEBUG] [io.ne.ut.ResourceLeakDetectorFactory/]: Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@7e472dc7
+[10:21:53] [Server thread/DEBUG] [io.ne.ut.in.InternalThreadLocalMap/]: -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[10:21:53] [Server thread/DEBUG] [io.ne.ut.in.InternalThreadLocalMap/]: -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.numHeapArenas: 24
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.numDirectArenas: 24
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.pageSize: 8192
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.maxOrder: 9
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.chunkSize: 4194304
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.smallCacheSize: 256
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.normalCacheSize: 64
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.cacheTrimInterval: 8192      
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.cacheTrimIntervalMillis: 0   
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.useCacheForAllThreads: false 
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.PooledByteBufAllocator/]: -Dio.netty.allocator.disableCacheFinalizersForFastThreadLocalThreads: false
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.ByteBufUtil/]: -Dio.netty.allocator.type: pooled
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.ByteBufUtil/]: -Dio.netty.threadLocalDirectBufferSize: 0
+[10:21:53] [Server thread/DEBUG] [io.ne.bu.ByteBufUtil/]: -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[10:21:53] [Server thread/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/NaturalSpawner
+[10:21:53] [Server thread/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/NaturalSpawner.spawnCategoryForPosition
+[10:21:53] [Server thread/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/NaturalSpawner.spawnMobsForChunkGeneration
+[10:21:53] [Server thread/INFO] [minecraft/IntegratedServer]: Changing view distance to 12, from 10
+[10:21:53] [Server thread/INFO] [minecraft/IntegratedServer]: Changing simulation distance to 12, from 0
+[10:21:53] [Render thread/DEBUG] [io.ne.ch.MultithreadEventLoopGroup/]: -Dio.netty.eventLoopThreads: 24
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.co.GlobalEventExecutor/]: -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[10:21:53] [Render thread/DEBUG] [io.ne.ch.ni.NioEventLoop/]: -Dio.netty.noKeySetOptimization: false
+[10:21:53] [Render thread/DEBUG] [io.ne.ch.ni.NioEventLoop/]: -Dio.netty.selectorAutoRebuildThreshold: 512
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.in.PlatformDependent/]: org.jctools-core.MpscChunkedArrayQueue: available   
+[10:21:53] [Render thread/DEBUG] [io.ne.ch.DefaultChannelId/]: -Dio.netty.processId: 22468 (auto-detected)
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.NetUtil/]: -Djava.net.preferIPv4Stack: false
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.NetUtil/]: -Djava.net.preferIPv6Addresses: system
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.NetUtilInitializations/]: Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.NetUtil/]: Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[10:21:53] [Render thread/DEBUG] [io.ne.ch.DefaultChannelId/]: -Dio.netty.machineId: b0:82:e2:ff:fe:3b:f3:84 (auto-detected)
+[10:21:53] [Render thread/DEBUG] [io.ne.bo.ChannelInitializerExtensions/]: -Dio.netty.bootstrap.extensions: null       
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.fi.NetworkFilters/]: Injected net.minecraftforge.network.filters.VanillaConnectionNetworkFilter@5db289c8 into net.minecraft.network.Connection@18d32c13
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.Recycler/]: -Dio.netty.recycler.maxCapacityPerThread: 4096
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.Recycler/]: -Dio.netty.recycler.ratio: 8
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.Recycler/]: -Dio.netty.recycler.chunkSize: 32
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.Recycler/]: -Dio.netty.recycler.blocking: false
+[10:21:53] [Render thread/DEBUG] [io.ne.ut.Recycler/]: -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.ForgePacketHandler/FORGE_PACKET_HANDLER]: Received server connection with modlist [forge, minecraft, petrification]
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.ForgePacketHandler/FORGE_PACKET_HANDLER]: Accepted server connection
+[10:21:53] [Netty Server IO #1/DEBUG] [ne.mi.ne.ForgePacketHandler/FORGE_PACKET_HANDLER]: Received client connection with modlist [forge, minecraft, petrification]
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.ForgePacketHandler/FORGE_PACKET_HANDLER]: Received server connection with channels [forge:channel_registration, forge:handshake, forge:login, petrification:main]
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Channel 'forge:handshake' : Version test of 'PRESENT 0' from server : ACCEPTED
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Channel 'forge:login' : Version test of 'PRESENT 0' from server : ACCEPTED
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Channel 'forge:channel_registration' : Version test of 'PRESENT 0' from server : ACCEPTED
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Channel 'petrification:main' : Version test of 'PRESENT 1' from server : ACCEPTED
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Accepting channel list from server 
+[10:21:53] [Netty Server IO #1/DEBUG] [ne.mi.ne.ForgePacketHandler/FORGE_PACKET_HANDLER]: Received client connection with channels [forge:channel_registration, forge:handshake, forge:login, petrification:main]
+[10:21:53] [Netty Server IO #1/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Channel 'forge:handshake' : Version test of 'PRESENT 0' from client : ACCEPTED
+[10:21:53] [Netty Server IO #1/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Channel 'forge:login' : Version test of 'PRESENT 0' from client : ACCEPTED
+[10:21:53] [Netty Server IO #1/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Channel 'forge:channel_registration' : Version test of 'PRESENT 0' from client : ACCEPTED
+[10:21:53] [Netty Server IO #1/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Channel 'petrification:main' : Version test of 'PRESENT 1' from client : ACCEPTED
+[10:21:53] [Netty Server IO #1/DEBUG] [ne.mi.ne.NetworkRegistry/NETREGISTRY]: Accepting channel list from client       
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.ForgePacketHandler/FORGE_PACKET_HANDLER]: Expecting 19 registries: minecraft:command_argument_type, minecraft:recipe_serializer, minecraft:sound_event, minecraft:particle_type, minecraft:villager_profession, minecraft:item, minecraft:potion, minecraft:painting_variant, forge:fluid_type, minecraft:block_entity_type, forge:display_contexts, minecraft:block, forge:entity_data_serializers, minecraft:mob_effect, minecraft:stat_type, minecraft:menu, minecraft:data_component_type, minecraft:fluid, minecraft:entity_type
+[10:21:53] [Netty Server IO #1/DEBUG] [ne.mi.ne.ForgePacketHandler/FORGE_PACKET_HANDLER]: Received acknowledgement 0 from client
+[10:21:53] [Netty Local Client IO #0/DEBUG] [ne.mi.ne.ForgePacketHandler/FORGE_PACKET_HANDLER]: Received config sync from server for forge-server.toml
+[10:21:54] [Render thread/INFO] [ne.mi.co.ForgeHooks/]: Connected to a modded server.
+[10:21:54] [Server thread/INFO] [minecraft/PlayerList]: Dev[local:E:7ed1c5cb] logged in with entity id 1 at (-6.5, -60.0, -3.5)
+[10:21:54] [Server thread/INFO] [minecraft/MinecraftServer]: Dev锟斤拷锟斤拷锟斤拷锟斤拷戏
+[10:21:54] [Render thread/INFO] [minecraft/AdvancementTree]: Loaded 2 advancements
+[10:21:54] [Worker-Main-10/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate
+[10:21:54] [Worker-Main-10/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate.lambda$placeEntities$5       
+libpng warning: iCCP: known incorrect sRGB profile
+[10:21:57] [Render thread/DEBUG] [ne.mi.co.tr.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/raid/Raid
+[10:21:57] [Render thread/DEBUG] [ne.mi.co.Co.forge/COREMODLOG]: Redirecting method call finalizeSpawn(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; to onFinalizeSpawn(Lnet/minecraft/world/entity/Mob;Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/world/DifficultyInstance;Lnet/minecraft/world/entity/EntitySpawnReason;Lnet/minecraft/world/entity/SpawnGroupData;)Lnet/minecraft/world/entity/SpawnGroupData; inside of net/minecraft/world/entity/raid/Raid.joinRaid
+[10:22:32] [Server thread/WARN] [co.xi.pe.it.MiniStructureBlockItem/]: [MiniStructure] placed at BlockPos{x=-7, y=-60, z=-2} WITHOUT structure data
+[10:25:15] [Render thread/ERROR] [minecraft/Minecraft]: Reported exception thrown!
+net.minecraft.ReportedException: Ticking entity
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.Level.guardEntityTick(Level.java:588) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.lambda$tickEntities$4(ClientLevel.java:267) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.tickEntities(ClientLevel.java:265) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.tick(Minecraft.java:1775) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.runTick(Minecraft.java:1205) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.run(Minecraft.java:836) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.main.Main.main(Main.java:240) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+        at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.14/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.1.14.jar!/:?]
+        at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.14/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.1.14.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+        at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+        at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]        
+        at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+        at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]        
+Caused by: java.lang.NullPointerException: Cannot invoke "net.minecraft.server.MinecraftServer.getTickCount()" because the return value of "net.minecraft.world.level.Level.getServer()" is null
+        at TRANSFORMER/petrification@2.1.0/com.xiong.petrification.item.StructureCoreItem.inventoryTick(StructureCoreItem.java:104) ~[main/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.ItemStack.inventoryTick(ItemStack.java:719) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/net.minecraftforge.forge@54.1.14/net.minecraftforge.common.extensions.IForgeItem.onInventoryTick(IForgeItem.java:242) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/net.minecraftforge.forge@54.1.14/net.minecraftforge.common.extensions.IForgeItemStack.onInventoryTick(IForgeItemStack.java:229) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Inventory.tick(Inventory.java:202) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Player.aiStep(Player.java:558) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.LocalPlayer.aiStep(LocalPlayer.java:843) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2545) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Player.tick(Player.java:284) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.AbstractClientPlayer.tick(AbstractClientPlayer.java:61) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.LocalPlayer.tick(LocalPlayer.java:206) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.tickNonPassenger(ClientLevel.java:288) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.Level.guardEntityTick(Level.java:579) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        ... 22 more
+Transformer Audit:
+  com.xiong.petrification.item.StructureCoreItem
+    REASON: classloading
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.main.Main
+    REASON: classloading
+  net.minecraft.client.multiplayer.ClientLevel
+    REASON: classloading
+  net.minecraft.client.player.AbstractClientPlayer
+    REASON: classloading
+  net.minecraft.client.player.LocalPlayer
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.entity.LivingEntity
+    REASON: classloading
+  net.minecraft.world.entity.player.Inventory
+    REASON: classloading
+  net.minecraft.world.entity.player.Player
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.item.ItemStack
+    REASON: classloading
+  net.minecraft.world.level.Level
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.level.entity.EntityTickList
+    REASON: classloading
+  net.minecraftforge.common.extensions.IForgeItem
+    REASON: classloading
+  net.minecraftforge.common.extensions.IForgeItemStack
+    REASON: classloading
+[10:25:16] [Server thread/INFO] [minecraft/MinecraftServer]: Stopping server
+[10:25:16] [Server thread/INFO] [minecraft/MinecraftServer]: Saving players
+[10:25:16] [Server thread/INFO] [minecraft/MinecraftServer]: Saving worlds
+[10:25:16] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[锟铰碉拷锟斤拷锟斤拷]'/minecraft:overworld
+[10:25:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[锟铰碉拷锟斤拷锟斤拷]'/minecraft:the_nether
+[10:25:18] [Server thread/INFO] [minecraft/MinecraftServer]: Saving chunks for level 'ServerLevel[锟铰碉拷锟斤拷锟斤拷]'/minecraft:the_end
+[10:25:18] [Server thread/DEBUG] [ne.mi.co.ForgeHooks/WP]: Gathering id map for writing to world save 锟铰碉拷锟斤拷锟 斤拷unClient
+[10:25:18] [Server thread/DEBUG] [ne.mi.co.ForgeHooks/WP]: ID Map collection complete 锟铰碉拷锟斤拷锟斤拷
+[10:25:18] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (锟铰碉拷锟斤拷锟斤拷): All chunks are saved
+[10:25:18] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved   
+[10:25:18] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved    
+[10:25:18] [Server thread/INFO] [minecraft/MinecraftServer]: ThreadedAnvilChunkStorage: All dimensions are saved       
+[10:25:19] [Server thread/DEBUG] [ne.mi.fm.co.ConfigTracker/CONFIG]: Unloading configs type SERVER
+[10:25:19] [Server thread/DEBUG] [ne.mi.fm.co.ConfigFileTypeHandler/CONFIG]: Stopping watcher for hander: ConfigFileTypeHandler[SERVER]
+[10:25:19] [Render thread/FATAL] [ne.mi.co.ForgeMod/]: Preparing crash report with UUID 3a1640ad-56bd-47c4-85db-7d9b2bc35a24
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2026-11-21 10:25:19
+Description: Ticking entity
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.server.MinecraftServer.getTickCount()" because the return value of "net.minecraft.world.level.Level.getServer()" is null
+        at TRANSFORMER/petrification@2.1.0/com.xiong.petrification.item.StructureCoreItem.inventoryTick(StructureCoreItem.java:104) ~[main/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.ItemStack.inventoryTick(ItemStack.java:719) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/net.minecraftforge.forge@54.1.14/net.minecraftforge.common.extensions.IForgeItem.onInventoryTick(IForgeItem.java:242) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/net.minecraftforge.forge@54.1.14/net.minecraftforge.common.extensions.IForgeItemStack.onInventoryTick(IForgeItemStack.java:229) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Inventory.tick(Inventory.java:202) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Player.aiStep(Player.java:558) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.LocalPlayer.aiStep(LocalPlayer.java:843) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2545) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Player.tick(Player.java:284) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.AbstractClientPlayer.tick(AbstractClientPlayer.java:61) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.LocalPlayer.tick(LocalPlayer.java:206) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.tickNonPassenger(ClientLevel.java:288) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.Level.guardEntityTick(Level.java:579) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.lambda$tickEntities$4(ClientLevel.java:267) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.tickEntities(ClientLevel.java:265) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.tick(Minecraft.java:1775) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.runTick(Minecraft.java:1205) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.run(Minecraft.java:836) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.main.Main.main(Main.java:240) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+        at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.14/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.1.14.jar!/:?]
+        at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.14/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.1.14.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+        at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+        at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]        
+        at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+        at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]        
+Transformer Audit:
+  com.xiong.petrification.item.StructureCoreItem
+    REASON: classloading
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.main.Main
+    REASON: classloading
+  net.minecraft.client.multiplayer.ClientLevel
+    REASON: classloading
+  net.minecraft.client.player.AbstractClientPlayer
+    REASON: classloading
+  net.minecraft.client.player.LocalPlayer
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.entity.LivingEntity
+    REASON: classloading
+  net.minecraft.world.entity.player.Inventory
+    REASON: classloading
+  net.minecraft.world.entity.player.Player
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.item.ItemStack
+    REASON: classloading
+  net.minecraft.world.level.Level
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.level.entity.EntityTickList
+    REASON: classloading
+  net.minecraftforge.common.extensions.IForgeItem
+    REASON: classloading
+  net.minecraftforge.common.extensions.IForgeItemStack
+    REASON: classloading
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Suspected Mod:
+        Petrification (petrification), Version: 2.1.0
+                at TRANSFORMER/petrification@2.1.0/com.xiong.petrification.item.StructureCoreItem.inventoryTick(StructureCoreItem.java:104)
+Stacktrace:
+        at TRANSFORMER/petrification@2.1.0/com.xiong.petrification.item.StructureCoreItem.inventoryTick(StructureCoreItem.java:104) ~[main/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.item.ItemStack.inventoryTick(ItemStack.java:719) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/net.minecraftforge.forge@54.1.14/net.minecraftforge.common.extensions.IForgeItem.onInventoryTick(IForgeItem.java:242) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%231!/:?]
+        at TRANSFORMER/net.minecraftforge.forge@54.1.14/net.minecraftforge.common.extensions.IForgeItemStack.onInventoryTick(IForgeItemStack.java:229) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%231!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Inventory.tick(Inventory.java:202) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Player.aiStep(Player.java:558) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.LocalPlayer.aiStep(LocalPlayer.java:843) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2545) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.entity.player.Player.tick(Player.java:284) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.AbstractClientPlayer.tick(AbstractClientPlayer.java:61) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.player.LocalPlayer.tick(LocalPlayer.java:206) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.tickNonPassenger(ClientLevel.java:288) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.Level.guardEntityTick(Level.java:579) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.lambda$tickEntities$4(ClientLevel.java:267) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.tickEntities(ClientLevel.java:265) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar%230!/:?]
+Transformer Audit:
+  com.xiong.petrification.item.StructureCoreItem
+    REASON: classloading
+  net.minecraft.client.multiplayer.ClientLevel
+    REASON: classloading
+  net.minecraft.client.player.AbstractClientPlayer
+    REASON: classloading
+  net.minecraft.client.player.LocalPlayer
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.entity.LivingEntity
+    REASON: classloading
+  net.minecraft.world.entity.player.Inventory
+    REASON: classloading
+  net.minecraft.world.entity.player.Player
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.item.ItemStack
+    REASON: classloading
+  net.minecraft.world.level.Level
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.level.entity.EntityTickList
+    REASON: classloading
+  net.minecraftforge.common.extensions.IForgeItem
+    REASON: classloading
+  net.minecraftforge.common.extensions.IForgeItemStack
+    REASON: classloading
+-- Entity being ticked --
+Details:
+        Entity Type: minecraft:player (net.minecraft.client.player.LocalPlayer)
+        Entity ID: 1
+        Entity Name: Dev
+        Entity's Exact location: 22.67, -60.00, 22.48
+        Entity's Block location: World: (22,-60,22), Section: (at 6,4,6 in 1,-4,1; chunk contains blocks 16,-64,16 to 31,319,31), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+        Entity's Momentum: 0.00, -0.08, 0.00
+        Entity's Passengers: []
+        Entity's Vehicle: null
+Stacktrace:
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.Level.guardEntityTick(Level.java:579) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.lambda$tickEntities$4(ClientLevel.java:267) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.multiplayer.ClientLevel.tickEntities(ClientLevel.java:265) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.tick(Minecraft.java:1775) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.runTick(Minecraft.java:1205) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.run(Minecraft.java:836) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.main.Main.main(Main.java:240) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+        at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.14/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.1.14.jar!/:?]
+        at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.14/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.1.14.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+        at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+        at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]
+        at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+        at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]        
+Transformer Audit:
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.main.Main
+    REASON: classloading
+  net.minecraft.client.multiplayer.ClientLevel
+    REASON: classloading
+  net.minecraft.world.level.Level
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.world.level.entity.EntityTickList
+    REASON: classloading
+
+
+-- Uptime --
+Details:
+        JVM uptime: 252.967s
+        Wall uptime: 238.222s
+        High-res time: 249.177s
+        Client ticks: 4647 ticks / 232.350s
+Stacktrace:
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.fillReport(Minecraft.java:2270) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.emergencySaveAndCrash(Minecraft.java:900) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.Minecraft.run(Minecraft.java:856) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at TRANSFORMER/minecraft@1.21.4/net.minecraft.client.main.Main.main(Main.java:240) ~[forge-1.21.4-54.1.14_mapped_official_1.21.4-recomp.jar:?]
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+        at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.14/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.runTarget(CommonLaunchHandler.java:96) ~[fmlloader-1.21.4-54.1.14.jar!/:?]
+        at SECURE-BOOTSTRAP/net.minecraftforge.fmlloader@1.21.4-54.1.14/net.minecraftforge.fml.loading.targets.CommonLaunchHandler.lambda$makeService$0(CommonLaunchHandler.java:79) ~[fmlloader-1.21.4-54.1.14.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:77) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.LaunchServiceHandler.launch(LaunchServiceHandler.java:97) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.run(Launcher.java:116) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.Launcher.main(Launcher.java:75) [modlauncher-10.2.4.jar!/:?]
+        at SECURE-BOOTSTRAP/cpw.mods.modlauncher@10.2.4/cpw.mods.modlauncher.BootstrapEntry.main(BootstrapEntry.java:17) [modlauncher-10.2.4.jar!/:?]
+        at net.minecraftforge.bootstrap@2.1.7/net.minecraftforge.bootstrap.Bootstrap.moduleMain(Bootstrap.java:188) [bootstrap-2.1.8.jar!/:?]
+        at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+        at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+        at net.minecraftforge.bootstrap.Bootstrap.bootstrapMain(Bootstrap.java:133) [bootstrap-2.1.8.jar:2.1.8]        
+        at net.minecraftforge.bootstrap.Bootstrap.start(Bootstrap.java:53) [bootstrap-2.1.8.jar:2.1.8]
+        at net.minecraftforge.bootstrap.ForgeBootstrap.main(ForgeBootstrap.java:19) [bootstrap-2.1.8.jar:2.1.8]        
+Transformer Audit:
+  net.minecraft.client.Minecraft
+    REASON: classloading
+    PLUGIN: accesstransformer:BEFORE
+  net.minecraft.client.main.Main
+    REASON: classloading
+
+
+-- Affected level --
+Details:
+        All players: 1 total; [LocalPlayer['Dev'/1, l='ClientLevel', x=22.67, y=-60.00, z=22.48]]
+        Chunk stats: 961, 637
+        Level dimension: minecraft:overworld
+        Level spawn location: World: (0,-60,0), Section: (at 0,4,0 in 0,-4,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+        Level time: 4026 game time, 4026 day time
+        Server brand: forge
+        Server type: Integrated singleplayer server
+        Tracked entity count: 88
+
+-- Last reload --
+Details:
+        Reload number: 2
+        Reload reason: manual
+        Finished: Yes
+        Packs: vanilla, mod_resources
+
+-- System Details --
+Details:
+        Minecraft Version: 1.21.4
+        Minecraft Version ID: 1.21.4
+        Operating System: Windows 11 (amd64) version 10.0
+        Java Version: 21.0.11, Oracle Corporation
+        Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+        Memory: 169154568 bytes (161 MiB) / 962592768 bytes (918 MiB) up to 4106223616 bytes (3916 MiB)
+        CPUs: 12
+        Processor Vendor: AuthenticAMD
+        Processor Name: AMD Ryzen 5 5600GT with Radeon Graphics
+        Identifier: AuthenticAMD Family 25 Model 80 Stepping 0
+        Microarchitecture: Zen 3
+        Frequency (GHz): 3.60
+        Number of physical packages: 1
+        Number of physical CPUs: 6
+        Number of logical CPUs: 12
+        Graphics card #0 name: AMD Radeon(TM) Graphics
+        Graphics card #0 vendor: Advanced Micro Devices, Inc.
+        Graphics card #0 VRAM (MiB): 512.00
+        Graphics card #0 deviceId: VideoController1
+        Graphics card #0 versionInfo: 31.0.21925.1001
+        Memory slot #0 capacity (MiB): 8192.00
+        Memory slot #0 clockSpeed (GHz): 2.67
+        Memory slot #0 type: DDR4
+        Memory slot #1 capacity (MiB): 8192.00
+        Memory slot #1 clockSpeed (GHz): 2.67
+        Memory slot #1 type: DDR4
+        Virtual memory max (MiB): 30536.29
+        Virtual memory used (MiB): 29529.15
+        Swap memory total (MiB): 14875.16
+        Swap memory used (MiB): 3886.36
+        Space in storage for jna.tmpdir (MiB): <path not set>
+        Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+        Space in storage for io.netty.native.workdir (MiB): <path not set>
+        Space in storage for java.io.tmpdir (MiB): available: 28810.55, total: 153601.00
+        Space in storage for workdir (MiB): available: 43931.00, total: 161439.00
+        JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump   
+        Launched Version: MOD_DEV
+        Backend library: LWJGL version 3.3.3+5
+        Backend API: AMD Radeon(TM) Graphics GL version 4.6.0 Core Profile Context 26.5.2.260413, ATI Technologies Inc.
+        Window size: 854x480
+        GFLW Platform: win32
+        GL Caps: Using framebuffer using OpenGL 3.2
+        GL debug messages:
+        Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+        Universe: 400921fb54442d18
+        Type: Integrated Server (map_client.txt)
+        Graphics mode: fancy
+        Render Distance: 12/12 chunks
+        Resource Packs: vanilla, mod_resources
+        Current Language: zh_cn
+        Locale: zh_CN
+        System encoding: GBK
+        File encoding: UTF-8
+        CPU: 12x AMD Ryzen 5 5600GT with Radeon Graphics
+        Server Running: true
+        Player Count: 1 / 8; [ServerPlayer['Dev'/1, l='ServerLevel[锟铰碉拷锟斤拷锟斤拷]', x=22.67, y=-60.00, z=22.48]]
+        Active Data Packs: vanilla, mod:forge, mod:petrification (incompatible)
+        Available Data Packs: minecart_improvements, mod:forge, mod:petrification (incompatible), redstone_experiments, trade_rebalance, vanilla
+        Enabled Feature Flags: minecraft:vanilla
+        World Generation: Stable
+        World Seed: 1283395772994787177
+        Suppressed Exceptions: ~~NONE~~
+        ModLauncher: 10.2.4
+        ModLauncher launch target: forge_userdev_client
+        ModLauncher naming: mcp
+        ModLauncher services:
+                / slf4jfixer PLUGINSERVICE
+                / runtimedistcleaner PLUGINSERVICE
+                / runtime_enum_extender PLUGINSERVICE
+                / object_holder_definalize PLUGINSERVICE
+                / capability_token_subclass PLUGINSERVICE
+                / accesstransformer PLUGINSERVICE
+                / mixin PLUGINSERVICE
+                / eventbus PLUGINSERVICE
+                / fml TRANSFORMATIONSERVICE
+                / mixin TRANSFORMATIONSERVICE
+        FML Language Providers:
+                lowcodefml@54
+                minecraft@1.0
+                javafml@54.1.14
+        Mod List:
+                                                                  |Minecraft                     |minecraft            
+         |1.21.4              |DONE      |Manifest: NOSIGNATURE
+                                                                  |Forge                         |forge                
+         |54.1.14             |DONE      |Manifest: NOSIGNATURE
+                main                                              |Petrification                 |petrification                 |2.1.0               |DONE      |Manifest: NOSIGNATURE
+        Crash Report UUID: 3a1640ad-56bd-47c4-85db-7d9b2bc35a24
+        FML: 0.0
+        Forge: net.minecraftforge:54.1.14
+[10:25:19] [Render thread/FATAL] [ne.mi.co.ForgeMod/]: Preparing crash report with UUID c2d56bf8-4277-4c6b-b6e8-b4fd224520c2
+#@!@# Game crashed! Crash report saved to: #@!@# E:\01_锟斤拷目\workplace\石锟斤拷模锟介降锟斤拷\forge-1.21.4-54.1.14-mdk\run\.\crash-reports\crash-2026-11-21_10.25.19-client.txt
+
+> Task :runClient FAILED
+
+[Incubating] Problems report is available at: file:///E:/01_%E9%A1%B9%E7%9B%AE/workplace/%E7%9F%B3%E5%8C%96%E6%A8%A1%E7%BB%84%E9%99%8D%E7%BA%A7/forge-1.21.4-54.1.14-mdk/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':runClient'.
+> Process 'command 'D:\jdk-21.0.11\bin\java.exe'' finished with non-zero exit value -1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.12.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD FAILED in 4m 54s

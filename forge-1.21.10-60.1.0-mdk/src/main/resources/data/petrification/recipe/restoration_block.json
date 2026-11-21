@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "PCP",
+    "PPP"
+  ],
+  "key": {
+    "P": "petrification:restoration_powder",
+    "C": "minecraft:stone"
+  },
+  "result": {
+    "id": "petrification:restoration_block",
+    "count": 1
+  }
+}

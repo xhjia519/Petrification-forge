@@ -1,0 +1,27 @@
+plugins {
+    id 'dev.architectury.loom-no-remap'
+}
+
+base {
+    archivesName = "${mod_id}-neoforge"
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${minecraft_version}"
+    neoForge "net.neoforged:neoforge:${neoforge_version}"
+
+    implementation project(':common')
+}
+
+loom {
+    runs {
+        client {
+            client()
+            name = 'NeoForge Client'
+        }
+        server {
+            server()
+            name = 'NeoForge Server'
+        }
+    }
+}

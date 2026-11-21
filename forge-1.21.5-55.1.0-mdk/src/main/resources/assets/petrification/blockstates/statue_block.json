@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "petrification:block/statue_block" },
+    "facing=south": { "model": "petrification:block/statue_block", "y": 180 },
+    "facing=west":  { "model": "petrification:block/statue_block", "y": 270 },
+    "facing=east":  { "model": "petrification:block/statue_block", "y": 90 }
+  }
+}
