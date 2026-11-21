@@ -16,13 +16,29 @@ import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraftforge.client.extensions.common.IClientItemExtensions;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
+import java.util.function.Consumer;
 
 public class StatueBlockItem extends BlockItem {
     public StatueBlockItem(BlockItem.Properties properties) {
         super(ModBlocks.STATUE_BLOCK.get(), properties);
+    }
+
+    /**
+     * 雕像物品用手持/背包/GUI 渲染器显示原生物模型（1.21.1 无 SpecialModelRenderer，改用 BEWLR）。
+     * 需配合物品模型 parent = minecraft:builtin/entity 才会触发（BakedModel.isCustomRenderer）。
+     */
+    @Override
+    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+        consumer.accept(new IClientItemExtensions() {
+            @Override
+            public net.minecraft.client.renderer.BlockEntityWithoutLevelRenderer getCustomRenderer() {
+                return com.xiong.petrification.client.StatueItemRenderer.create();
+            }
+        });
     }
 
     @Override

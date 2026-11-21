@@ -159,6 +159,24 @@ public class StatueBlock extends BaseEntityBlock implements SimpleWaterloggedBlo
         return super.getCloneItemStack(level, pos, state);
     }
 
+    /**
+     * Ctrl+中键（创造模式选取方块）实际走 Forge 的 5 参扩展方法，而非上面的 3 参方法。
+     * 1.21.1 中两者互不委托，必须单独覆写，否则复制出的雕像丢失数据。
+     */
+    @Override
+    public ItemStack getCloneItemStack(BlockState state, net.minecraft.world.phys.HitResult target,
+                                       LevelReader level, BlockPos pos, Player player) {
+        if (level.getBlockEntity(pos) instanceof StatueBlockEntity blockEntity) {
+            StatueComponent component = blockEntity.getStatueData();
+            if (component != null) {
+                ItemStack stack = new ItemStack(ModItems.STATUE_BLOCK_ITEM.get());
+                stack.set(com.xiong.petrification.registry.ModDataComponents.STATUE_DATA.get(), component);
+                return stack;
+            }
+        }
+        return super.getCloneItemStack(state, target, level, pos, player);
+    }
+
     @Override
     public boolean hasAnalogOutputSignal(BlockState state) {
         return true;

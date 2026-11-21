@@ -164,6 +164,90 @@ public class StatueBlockEntityRenderer implements BlockEntityRenderer<StatueBloc
         }
     }
 
+    private static final Map<EntityType<?>, Entity> ITEM_ENTITY_CACHE = new HashMap<>();
+
+    /**
+     * 物品级渲染（BEWLR 调用）：让手中 / GUI 里的雕像显示原生物 3D 模型。
+     * 与方块渲染共用同一套贴材质色逻辑，坐标按物品模型处理（ItemRenderer 已平移 -0.5）。
+     */
+    @SuppressWarnings({"unchecked", "rawtypes"})
+    public static void renderItemStatue(StatueComponent component, PoseStack poseStack,
+                                        MultiBufferSource bufferSource, int packedLight) {
+        net.minecraft.client.Minecraft mc = net.minecraft.client.Minecraft.getInstance();
+        net.minecraft.client.multiplayer.ClientLevel level = mc.level;
+        if (level == null) {
+            return;
+        }
+        EntityRenderDispatcher dispatcher = mc.getEntityRenderDispatcher();
+
+        EntityType<?> entityType = BuiltInRegistries.ENTITY_TYPE.get(component.entityType());
+        if (entityType == null) {
+            return;
+        }
+        Entity entity = ITEM_ENTITY_CACHE.computeIfAbsent(entityType, type -> {
+            Entity created = type.create(level);
+            if (created != null) {
+                created.setId(-1);
+            }
+            return created;
+        });
+        if (entity == null) {
+            return;
+        }
+
+        if (entity instanceof LivingEntity livingEntity) {
+            applyCapturedNbt(livingEntity, component);
+            applyPose(livingEntity, component);
+        } else {
+            entity.setYRot(component.yaw());
+            entity.setXRot(component.pitch());
+            entity.yRotO = component.yaw();
+            entity.xRotO = component.pitch();
+        }
+
+        try {
+            int materialColor = computeMaterialColor(component);
+            LivingEntityRenderer<?, ?> livingRenderer = entity instanceof LivingEntity
+                    && dispatcher.getRenderer(entity) instanceof LivingEntityRenderer<?, ?> ler ? ler : null;
+
+            float fit = computeFitScale(entity);
+            poseStack.pushPose();
+            try {
+                poseStack.translate(0.5, 0.0, 0.5);
+                poseStack.scale(fit, fit, fit);
+
+                boolean tinted = false;
+                if (livingRenderer != null) {
+                    poseStack.pushPose();
+                    try {
+                        renderLivingTinted((LivingEntityRenderer) livingRenderer, (LivingEntity) entity,
+                                component, poseStack, bufferSource, packedLight, 0.0f, materialColor);
+                        tinted = true;
+                    } catch (Throwable e) {
+                        tinted = false;
+                    } finally {
+                        poseStack.popPose();
+                    }
+                }
+                if (!tinted) {
+                    dispatcher.render(entity, 0.0, 0.0, 0.0, entity.getYRot(), 0.0f,
+                            poseStack, bufferSource, packedLight);
+                }
+            } finally {
+                poseStack.popPose();
+            }
+        } catch (Exception e) {
+            // 物品渲染失败不应影响主流程
+        }
+    }
+
+    /** 把任意大小的实体缩放进 1x1x1 物品格（0.9 留边）。 */
+    private static float computeFitScale(Entity entity) {
+        float width = Math.max(entity.getBbWidth(), 0.001f);
+        float height = Math.max(entity.getBbHeight(), 0.001f);
+        return Math.min(1.0f, Math.min(0.9f / width, 0.9f / height));
+    }
+
     private static final Map<Entity, net.minecraft.nbt.CompoundTag> APPLIED_RENDER_NBT = new HashMap<>();
 
     private static void applyCapturedNbt(Entity entity, StatueComponent component) {

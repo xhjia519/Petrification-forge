@@ -410,19 +410,16 @@ public final class MaterializationHelper {
             variant = Optional.of("bee|" + (bee.isAngry() ? 1 : 0) + "|" + (bee.hasNectar() ? 1 : 0));
         }
 
-        // Orientation: clamp head/body yaw deviations to ±90° from the body yaw. A fleeing mob
-        // looks back over its shoulder while being petrified (headYaw ≈ yaw ± 180°), and a
-        // player's yBodyRot lags yRot while turning; faithfully freezing such an instant renders
-        // the statue with its head/body spun a half-turn relative to the body. Clamping keeps
-        // normal looking-around within ±90° intact.
+        // Orientation: clamp head yaw deviations to ±90° from the body yaw. A fleeing mob
+        // looks back over its shoulder while being petrified (headYaw ≈ bodyYaw ± 180°), and
+        // faithfully freezing that instant spins the statue's head a half-turn.
+        // Body yaw must come from yBodyRot: the renderer rotates the model with yBodyRot, and a
+        // turning mob/player has yBodyRot lagging getYRot(), so using getYRot() shifted the statue.
         float yaw = entity.getYRot();
         float headYaw = entity.getYHeadRot();
-        float bodyYaw = entity instanceof Player player ? player.yBodyRot : yaw;
-        if (Math.abs(net.minecraft.util.Mth.wrapDegrees(headYaw - yaw)) > 90.0f) {
-            headYaw = yaw;
-        }
-        if (Math.abs(net.minecraft.util.Mth.wrapDegrees(bodyYaw - yaw)) > 90.0f) {
-            bodyYaw = yaw;
+        float bodyYaw = entity.yBodyRot;
+        if (Math.abs(net.minecraft.util.Mth.wrapDegrees(headYaw - bodyYaw)) > 90.0f) {
+            headYaw = bodyYaw;
         }
 
         return new StatueComponent(

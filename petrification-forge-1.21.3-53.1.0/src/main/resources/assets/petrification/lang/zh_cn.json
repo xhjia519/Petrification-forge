@@ -1,5 +1,6 @@
 {
   "block.petrification.statue_block": "雕像方块",
+  "block.petrification.mini_structure_block": "微缩建筑方块",
   "item.petrification.statue_block": "雕像",
   "item.petrification.restoration_powder": "还原粉",
   "item.petrification.structure_core": "结构核心",
